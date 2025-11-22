@@ -9,9 +9,9 @@ Few-shot, class-agnostic counting: Counts any fruit provided sample exemplars.
 
 No retraining needed: The CounTR model compares patches with examples using attention.
 
-Multi-modal input: Utilizes RGB and NIR images (deepNIR dataset) for improved accuracy.
+Multi-modal input: Utilises RGB and NIR images (deepNIR dataset) for improved accuracy.
 
 Edge deployment: Runs efficiently on ARM hardware for on-site yield assessment.
 
-Open-source implementation: Built with Python and popular deep learning libraries.
+Open-source implementation: popular deep learning libraries.
 
