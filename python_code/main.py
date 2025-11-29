@@ -198,6 +198,7 @@ class FruitSearchApp(QWidget):
         plt.xlabel("Image index")
         plt.ylabel("Count")
         plt.show(block=False)
+        # print(f"Updating image index {index}: count={c}, dm is None={dm is None}")
 
         # Slider to browse overlays
         self.slider.setMaximum(len(self.filtered_files))
@@ -243,7 +244,7 @@ class FruitSearchApp(QWidget):
         bboxes = cv2.selectROIs("Select Exemplars", clone, showCrosshair=True, fromCenter=False)
         cv2.destroyWindow("Select Exemplars")
         # bboxes: N x 4, each [x, y, w, h]
-        return bboxes.tolist()
+        return list(bboxes)
 
     def update_image(self, index):
         if not self.filtered_files or not self.density_maps:
