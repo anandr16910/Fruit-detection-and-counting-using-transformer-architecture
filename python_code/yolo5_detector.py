@@ -28,11 +28,21 @@ class YOLOv5ObjectCounter:
         # Loads COCO-pretrained YOLOv5s (auto-download on first run)
         self.model = YOLO(model_path)
 
+   
+
     def _run(self, image_bgr):
-        # YOLO expects RGB image or path; convert BGR → RGB
         img_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
-        results = self.model(img_rgb, verbose=False)
-        return results[0]   # single-image result
+        results = self.model(
+        img_rgb,
+        conf=0.05,       # even lower for higher recall
+        iou=0.5,         # slightly higher NMS IoU
+        imgsz=1024,      # more pixels per berry
+        max_det=300,     # allow many berries
+        agnostic_nms=True
+        )
+        return results[0]
+
+
 
     def count_objects(self, image_bgr):
         r = self._run(image_bgr)
