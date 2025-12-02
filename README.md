@@ -15,3 +15,11 @@ Edge deployment: Runs efficiently on ARM hardware for on-site yield assessment.
 
 Open-source implementation: popular deep learning libraries.
 
+
+# References
+
+Liu, Chang, Yujie Zhong, Andrew Zisserman, and Weidi Xie. "Countr: Transformer-based generalised visual counting." arXiv preprint arXiv:2208.13721 (2022). [Read Paper]
+
+Ranjan, Viresh, Udbhav Sharma, Thu Nguyen, and Minh Hoai. "Learning to count everything." In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 3394-3403. 2021. [Read Paper]
+
+Sa, Inkyu, et al. "deepNIR: Datasets for Generating Synthetic NIR Images and Improved Fruit Detection System Using Deep Learning Techniques." Sensors, vol. 22, no. 13, June 2022, p. 4721. DOI: [https://doi.org/10.3390/s22134721]
