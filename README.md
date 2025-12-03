@@ -15,6 +15,17 @@ Edge deployment: Runs efficiently on ARM hardware for on-site yield assessment.
 
 Open-source implementation: popular deep learning libraries.
 
+# YOLO based detection
+
+- Core AI Components
+The YOLOv5ObjectCounter class loads a pretrained YOLOv5s model (yolov5s.pt) for detecting objects like fruits in images, running inference with parameters tuned for high recall (e.g., conf=0.05, imgsz=1024). It generates object counts and density heatmaps by processing bounding boxes from the model's predictions, leveraging neural network outputs for tasks like blueberry or avocado counting. This aligns with AI-powered fruit detection systems using YOLO architectures.
+
+- Application Features
+The FruitSearchApp GUI searches a dataset directory for images matching user patterns (e.g., "blueberry"), applies YOLO detection across filtered images, and visualizes results via matplotlib plots including montages, overlays, density maps, and interactive sliders. Density maps accumulate heatmap values from box predictions, normalized for visualization with OpenCV overlays. Batch processing computes counts for all matches, producing scatter plots of detection results.
+
+- Technical Context
+Built with PyQt5 for the interface, OpenCV for image handling, and NumPy for array operations, it targets MPS (Apple Silicon GPU) acceleration via model.to("mps:0"), common in ML workflows like those with Jupyter/Anaconda/YOLOv5 for object detection projects. No fine-tuning is shown; it uses COCO-pretrained weights for general fruit detection.
+
 
 # References
 
