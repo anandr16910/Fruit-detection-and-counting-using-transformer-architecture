@@ -26,7 +26,7 @@ The FruitSearchApp GUI searches a dataset directory for images matching user pat
 - Technical Context
 Built with PyQt5 for the interface, OpenCV for image handling, and NumPy for array operations, it targets MPS (Apple Silicon GPU) acceleration via model.to("mps:0"), common in ML workflows like those with Jupyter/Anaconda/YOLOv5 for object detection projects. No fine-tuning is shown; it uses COCO-pretrained weights for general fruit detection.
 
-refer [python_codes]
+refer [python_code]  and download the dataset [https://drive.google.com/drive/folders/1NpmRvD39MCmF7CS71nCTM1wVsbyGF919?usp=drive_link]
 
 # References
 
