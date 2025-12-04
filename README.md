@@ -34,7 +34,7 @@ Refer [matlab](/matlab) folder
 
 # Python :
 Ensure jupyter notebook is installed.
-Ensure all dependencies are installed.
+Ensure all dependencies are installed. refer [requirements](/python_code/requirements.txt)
 
 refer [python_code](/python_code)  and download the dataset [https://drive.google.com/drive/folders/1NpmRvD39MCmF7CS71nCTM1wVsbyGF919?usp=drive_link]
 
