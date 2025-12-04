@@ -1,1 +1,54 @@
+# Computer Vision & Image Processing
+opencv-python
+numpy
+matplotlib
+
+# YOLO Model (Object Detection)
+ultralytics
+
+# GUI Framework
+PyQt5
+
+# Fruit Detection & Counting App
+
+A PyQt5 application that uses YOLOv5 (via Ultralytics) to detect, count, and create density maps of fruits. It links JSON annotations to images to allow text-based searching of specific fruit classes.
+
+## Prerequisites
+
+* Python 3.8+  (NOTE: ultralytics does not support python 3.12 and above)
+* pip
+
+## Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/anandr16910/Fruit-detection-and-counting-using-transformer-architecture.git](https://github.com/anandr16910/Fruit-detection-and-counting-using-transformer-architecture.git)
+    cd Fruit-detection-and-counting-using-transformer-architecture
+    ```
+
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Dataset Setup
+
+This application requires a specific folder structure to run. Please ensure you have a folder named `FruitDetectionDataset` in the root directory.
+
+**Required Structure:**
+```text
+FruitDetectionDataset/
+├── test/
+│   ├── img/ (contains .jpg/.png images)
+│   └── ann/ (contains .json annotation files)
+├── train/
+│   ├── img/
+│   └── ann/
+└── valid/
+    ├── img/
+    └── ann/
+
+In Jupyter notebook,
+
+load the yolo5_detector.py
 
