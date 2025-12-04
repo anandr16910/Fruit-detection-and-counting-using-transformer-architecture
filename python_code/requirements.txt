@@ -33,7 +33,7 @@ A PyQt5 application that uses YOLOv5 (via Ultralytics) to detect, count, and cre
 
 ## Dataset Setup
 
-This application requires a specific folder structure to run. Please ensure you have a folder named `FruitDetectionDataset` in the root directory.
+ This application requires a specific folder structure to run. Please ensure you have a folder named `FruitDetectionDataset` in the same dir as with yolo5_detector.py
 
 **Required Structure:**
 ```text
